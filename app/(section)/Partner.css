@@ -1,0 +1,64 @@
+.partnerWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background: #fff;
+  padding: 80px;
+}
+
+.partnerTypographyWrapper{
+  flex: 4;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.typography1 {
+  position: relative;
+  color: #60b848;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.typography1::before {
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #60b848;
+  border-radius: 50%;
+  transform: translate(-15px, 50%);
+}
+
+.typography2{
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.typography3{
+  color: gray;
+  font-weight: 300;
+}
+
+.partnerLogoWrapper{
+  flex: 8;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.partnerLogoWrapper>img{
+  width: 90px;
+  height: 90px;
+  filter: grayscale(1);
+  opacity: 0.7;
+  transition: all 0.3s ease-in-out;
+}
+
+.partnerLogoWrapper>img:hover{
+  filter: grayscale(0);
+  opacity: 1;
+}

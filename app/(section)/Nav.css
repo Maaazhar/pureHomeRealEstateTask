@@ -1,0 +1,80 @@
+.navBar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  z-index: 9999;
+}
+
+.sticky{
+  background-color: #000000aa;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #ffffff17;
+  transition: all 0.3s ease-in-out;
+}
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: 50px;
+  /* background: #000000d7; */
+}
+
+.navLogoWrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  transition: all 0.3s ease-in-out;
+}
+
+.navLogo {
+  width: 80px;
+  height: 80px;
+}
+
+.navLogoWrapper>a:hover {
+  /* background: #000000d7; */
+}
+
+.navListWrapper {
+  flex: 11;
+}
+
+.navListWrapper>ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+
+.navListWrapper>ul>li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 15px;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.navListWrapper>ul>li>a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  pointer-events: auto;
+}
+
+.navListWrapper>ul>li:hover  {
+  /* background: #000000d7; */
+}
+
+.navListWrapper>ul>li>a:hover {
+  color: #07b575;
+}
+
+.navListWrapper>ul>li>a.active {
+  color: #60b848;
+}
