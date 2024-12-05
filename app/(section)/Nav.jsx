@@ -1,14 +1,17 @@
-'use client'
+"use client";
 import Image from "next/image"
 import navLogo from "../imgs/white-and-green-logo.png"
 import "./Nav.css";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Nav = () => {
   const [navBgColor, setNavBgColor] = useState(false)
   const changeColor = () => window.scrollY >= 20 ? setNavBgColor(true) : setNavBgColor(false);
-  window.addEventListener("scroll", changeColor);
+  
+  useEffect(() => {
+    window.addEventListener("scroll", changeColor);
+  }, [])
 
   const menuItem = [ "Home", "Buy", "Rent", "Developers", "Offplan Projects", "About", "Careers", "Contact Us", ];
 
