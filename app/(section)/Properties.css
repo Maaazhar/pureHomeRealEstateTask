@@ -1,3 +1,56 @@
-.properties{
-  padding: 80px;
+.properties {
+  padding: 80px 50px;;
+}
+
+.properties>.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 20px;
+}
+
+.properties>.heading>.title {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.properties>.heading>.title>.typography1 {
+  transform: translateX(15px);
+}
+
+.properties>.heading>.filterButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.properties>.heading>.filterButtons>button {
+  padding: 10px 30px;
+  border: 1px solid #60b848;
+  border-radius: 100vw;
+  color: #878c9f;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.properties>.heading>.filterButtons>button:hover,
+.properties>.heading>.filterButtons>button.active {
+  background: #60b848;
+  color: #fff;
+}
+
+.propertyCards{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
 }

@@ -21,7 +21,7 @@ const Partner = () => {
         <span className="typography3">We are partnered with the best real estate development companies in the UAE and GCC region.</span>
       </div>
       <div className="partnerLogoWrapper">
-        {partnerList.map(() => (<Image src={partnerImg} />))}
+        {partnerList.map((i) => (<Image key={i} src={partnerImg} />))}
       </div>
     </div>
   )

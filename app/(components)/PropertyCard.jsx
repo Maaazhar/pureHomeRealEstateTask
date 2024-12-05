@@ -6,7 +6,9 @@ const PropertyCard = () => {
   return (
     <div className="propertyCard">
       <div className="thumbnail">
-        <Image src={propertyImg} />
+        <div className="imgWrapper">
+          <Image src={propertyImg} />
+        </div>
         <div className="typography">
           <div className="tag"><p>for sale</p></div>
           <div className="price"><p>AED 6,000,000</p></div>
@@ -14,7 +16,7 @@ const PropertyCard = () => {
         </div>
       </div>
       <div className="detailsWrapper">
-        <div className="title"><h3>Amazing 1BR Loft Apt | Premium Location | Premium Amenities</h3></div>
+        <div className="title"><p>Amazing 1BR Loft Apt | Premium Location | Premium Amenities</p></div>
         <div className="location">
           <i className="fa-solid fa-location-dot"></i>
           <p>Yas Island, Abu Dhabi</p></div>
@@ -33,12 +35,12 @@ const PropertyCard = () => {
           </div>
           <div className="roomDetailsItem">
             <i className="fa-solid fa-circle-chevron-right"></i>
-            <p>Reference: Sale-0306</p>
+            <p>Reference:</p> <span>Sale-0306</span>
           </div>
         </div>
       </div>
       <div className="detailsButtonWrapper">
-        <button className="detailsButton">details</button>
+        <button className="detailsButton"><span>details</span></button>
       </div>
     </div>
   )

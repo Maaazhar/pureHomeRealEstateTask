@@ -1,0 +1,150 @@
+.whyChooseUsWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 25px;
+  background: #fff;
+  padding: 80px 50px;
+}
+
+.whyChooseUsTypographyWrapper {
+  flex: 6;
+  height: 450px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.whyChooseUsTypographyWrapper>.typography1 {
+  position: relative;
+  color: #60b848;
+  font-size: 18px;
+  text-transform: uppercase;
+  transform: translateX(15px);
+}
+
+.typography1::before {
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #60b848;
+  border-radius: 50%;
+  transform: translate(-15px, 50%);
+}
+
+.typography2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.typography3 {
+  color: gray;
+  font-weight: 300;
+}
+
+
+.reasonList {
+  margin-left: 20px;
+}
+
+.reasonList>ul {
+  list-style: none;
+}
+
+.reasonList>ul>li {
+  position: relative;
+  padding: 0 0 10px 10px;
+  color: gray;
+  text-transform: capitalize;
+}
+
+.reasonList>ul>li::before {
+  content: "\2713";
+  position: absolute;
+  top: -5px;
+  left: -15px;
+  font-size: 20px;
+  color: #60b848;
+}
+
+.whyChooseUsVideoWrapper {
+  flex: 6;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 450px;
+  background: url("../imgs/Al_reem_island.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
+.whyChooseUsVideoWrapper>a>button {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  border: none;
+  border-radius: 100vw;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.whyChooseUsVideoWrapper>a>button:hover {
+  background: #60b848;
+}
+
+.whyChooseUsVideoWrapper>a>button:hover i {
+  color: #fff;
+}
+
+.whyChooseUsVideoWrapper>a>button::before,
+.whyChooseUsVideoWrapper>a>button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 100vw;
+  border: 1px solid #bbb;
+  left: 0;
+  top: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.whyChooseUsVideoWrapper>a>button>i {
+  color: #60b848;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.whyChooseUsVideoWrapper>a>button::before {
+  animation: ripple 2s linear infinite;
+}
+
+.whyChooseUsVideoWrapper>a>button::after {
+  animation: ripple 2s -1s linear infinite;
+}
+
+@keyframes ripple {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+  }
+
+  100% {
+    -webkit-transform: scale(1.8);
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}

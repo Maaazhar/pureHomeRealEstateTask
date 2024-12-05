@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: start;
   background: #fff;
-  padding: 80px;
+  padding: 80px 50px;
 }
 
 .partnerTypographyWrapper{
@@ -40,6 +40,7 @@
 .typography3{
   color: gray;
   font-weight: 300;
+  line-height: 1.5;
 }
 
 .partnerLogoWrapper{
