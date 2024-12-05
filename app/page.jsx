@@ -8,9 +8,9 @@ import Properties from "./(section)/Properties";
 export default function Home() {
   return (
     <div className={styles.main}>
-      {/* <Nav />
+      <Nav />
       <Hero />
-      <Partner /> */}
+      <Partner />
       <Properties />
     </div>
   );

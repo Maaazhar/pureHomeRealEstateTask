@@ -27,11 +27,18 @@
   background: #60b848;
   border-radius: 5px;
   color: #fff;
-  transform: translateY(-135px);
+  text-transform: capitalize;
+  transform: translateY(-110px);
 }
 
 .price{
-  font-size: 25px;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  background: #00000090;
+  border-radius: 5px;
+  color:#fff;
+  font-size: 22px;
+  font-weight: 600;
 }
 
 .type{
