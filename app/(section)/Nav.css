@@ -7,8 +7,9 @@
 }
 
 .sticky{
-  background-color: #000000aa;
-  backdrop-filter: blur(10px);
+  /* background-color: #000000aa; */
+  background-color: #0e2e50c9;
+  backdrop-filter: blur(20px);
   border-bottom: 1px solid #ffffff17;
   transition: all 0.3s ease-in-out;
 }

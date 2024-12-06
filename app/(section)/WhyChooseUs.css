@@ -42,8 +42,8 @@
 }
 
 .typography3 {
-  color: gray;
-  font-weight: 300;
+  color: #5a5a5a;
+  font-weight: 400;
 }
 
 
@@ -58,7 +58,7 @@
 .reasonList>ul>li {
   position: relative;
   padding: 0 0 10px 10px;
-  color: gray;
+  color: #5a5a5a;
   text-transform: capitalize;
 }
 

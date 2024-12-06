@@ -6,6 +6,8 @@ import Partner from "./(section)/Partner";
 import Properties from "./(section)/Properties";
 import WhyChooseUs from "./(section)/WhyChooseUs";
 import Footer from "./(section)/Footer";
+import ConnectingPeople from "./(section)/ConnectingPeople";
+import Neighborhood from "./(section)/Neighborhood";
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
       <Partner />
       <Properties />
       <WhyChooseUs />
+      <ConnectingPeople />
+      <Neighborhood />
       <Footer />
     </div>
   );

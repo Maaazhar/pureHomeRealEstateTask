@@ -1,5 +1,4 @@
 .footer {
-  /* padding: 0 0 20px; */
   position: relative;
   background-color: #0e2e50;
   background-image: url("../imgs/footer-2-bg.jpg");
@@ -10,48 +9,49 @@
   z-index: 1;
 }
 
-.footerContainer{
+.footerContainer {
   padding: 80px 50px;
   display: flex;
   align-items: start;
 }
 
-.aboutLinks{
+.aboutLinks {
   flex: 6;
   display: flex;
   align-items: start;
   gap: 20px;
 }
 
-.aboutLinks>.about{
+.aboutLinks>.about {
   flex: 6;
   display: flex;
   flex-direction: column;
-  gap: 20px ;
+  gap: 20px;
 }
 
-.about>.imgWrapper>img{
-  width:  200px;
+.about>.imgWrapper>img {
+  width: 200px;
   height: 200px;
   transform: translateX(25%);
 }
 
-.aboutLinks>.about>.text{
+.aboutLinks>.about>.text {
   color: #c8d3de;
   font-weight: 400;
   line-height: 1.5;
 }
 
-.aboutLinks>.about>.social>ul{
+.aboutLinks>.about>.social>ul {
   display: flex;
   align-items: center;
   justify-content: start;
   gap: 10px;
   list-style: none;
 }
-.aboutLinks>.about>.social>ul>li>a{
+
+.aboutLinks>.about>.social>ul>li>a {
   display: block;
-  width:  50px;
+  width: 50px;
   height: 50px;
   display: flex;
   align-items: center;
@@ -63,14 +63,18 @@
   text-decoration: none;
   transition: all 0.3s ease;
 }
-.aboutLinks>.about>.social>ul>li>a:hover{
+
+.aboutLinks>.about>.social>ul>li>a:hover {
   background: #60b848;
 }
 
-.aboutLinks>.links{
+.aboutLinks>.links {
   flex: 6;
 }
-.title{
+
+.links>.title,
+.newsletter>.title,
+.contact>.title {
   position: relative;
   padding-bottom: 10px;
   color: #fff;
@@ -78,10 +82,10 @@
   text-transform: capitalize;
 }
 
-.title:after{
+.title:after {
   position: absolute;
   content: " ";
-  width:80px;
+  width: 50px;
   height: 5px;
   left: 0;
   bottom: 0;
@@ -89,76 +93,97 @@
   border-radius: 100vw;
 }
 
-.aboutLinks>.links>ul{
+.aboutLinks>.links>ul {
   position: relative;
   padding: 20px 30px;
   color: #c8d3de;
   list-style: none;
 }
 
-.aboutLinks>.links>ul>li{
+.aboutLinks>.links>ul>li {
+  width: fit-content;
   margin-bottom: 10px;
+  padding: 3px 6px;
+  transition: all 0.3s ease;
+  border-radius: 3px;
   text-transform: capitalize;
 }
 
-.aboutLinks>.links>ul>li::before{
+.aboutLinks>.links>ul>li::before {
   position: absolute;
   content: "\2192";
   font-weight: 600;
   transform: translateX(-25px);
 }
 
-.newsletterContact{
+.contact>.contactItem>a {
+  padding: 3px 6px;
+  transition: all 0.3s ease;
+
+}
+
+.contact>.contactItem>a:hover,
+.aboutLinks>.links>ul>li:hover {
+  color: #fff;
+  background: #08203961;
+  transform: translateX(5px);
+}
+
+.newsletterContact {
   flex: 6;
   display: flex;
   gap: 20px;
 }
 
-.newsletter{
+.newsletter {
   flex: 6;
 }
 
 .newsletter,
-.newsletter>form{
+.newsletter>form {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.newsletter>form>input[type="submit"]{
+
+.newsletter>form>input[type="submit"] {
   border-radius: 0px;
-  font-size: 18px;
+  font-size: 16px;
   border: 1px solid #60b848;
   transition: all 0.3s ease;
 }
-.newsletter>form>input[type="submit"]:hover{
+
+.newsletter>form>input[type="submit"]:hover {
   background: #fff;
   border: 1px solid #60b848;
   color: #60b848;
 }
-.newsletter>form>p{
+
+.newsletter>form>p {
   color: #c8d3de;
 }
 
-.contact{
+.contact {
   flex: 6;
   display: grid;
   gap: 20px;
 }
 
-.contact>.contactItem{
+.contact>.contactItem {
   display: flex;
   align-items: start;
   justify-content: start;
   column-gap: 10px;
   color: #c8d3de;
 }
-.contact>.contactItem>i{
+
+.contact>.contactItem>i {
   font-size: 18px;
   margin-top: 3px;
 }
 
-.footerBottom{
-  padding: 30px 50px;
+.footerBottom {
+  padding: 40px 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -167,7 +192,7 @@
   font-weight: 300;
 }
 
-.termsPrivacy{
+.termsPrivacy {
   display: flex;
   align-items: center;
   justify-content: start;

@@ -1,0 +1,75 @@
+.neighborhoodCard{
+  position: relative;
+  max-width: 650px;
+  min-width: 297px;
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.neighborhoodCard>.imgWrapper{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("../imgs/Alreem-Island-AD.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease;
+  z-index: 1;
+  
+}
+.neighborhoodCard:hover  .imgWrapper{
+  transform: scale(1.05);
+}
+
+
+.neighborhoodCard>.cardLinks{
+  position: relative;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  color: #fff;
+  z-index: 2;
+}
+
+.neighborhoodCard>.cardLinks>.textLink{
+  padding: 5px 10px;
+  background: #0e2e50aa;
+  border-radius: 5px;
+}
+
+.neighborhoodCard>.cardLinks>.textLink>a{
+  display: block;
+  margin-top: 5px;
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.neighborhoodCard>.cardLinks>.textLink>a:hover{
+ color: #60b848;
+}
+
+.neighborhoodCard>.cardLinks>.buttonLink>a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:  50px;
+  height: 50px;
+  background: #0e2e50ce;
+  border-radius: 100vw;
+  transition: all 0.3s ease;
+}
+.neighborhoodCard>.cardLinks>.buttonLink>a>i{
+  transform: rotate(-45deg);
+  transition: all 0.3s ease;
+}
+.neighborhoodCard:hover .cardLinks .buttonLink a i{
+  transform: rotate(0deg);
+  color: #fff;
+}
+.neighborhoodCard:hover .cardLinks .buttonLink a{
+  background: #60b848;
+}

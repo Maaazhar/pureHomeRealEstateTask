@@ -1,0 +1,37 @@
+.neighborhood{
+  padding: 80px 50px;
+}
+
+
+.neighborhood>.header{
+  display: grid;
+  margin-bottom: 30px;
+}
+
+.neighborhood>.header>.typography1{
+  transform: translateX(15px);
+}
+
+.neighborhoodCards{
+  display: grid;
+  gap: 20px;
+}
+
+.cardHolder{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card{
+  flex: 6;
+}
+
+.card2{
+  flex: 6;
+  display: flex;
+  gap: 20px;
+}
+
+

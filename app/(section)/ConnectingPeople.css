@@ -1,0 +1,73 @@
+.connectingPeople {
+  position: relative;
+  padding: 80px 50px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 30px;
+  background: #0E2E50;
+}
+
+.connectingPeople>img {
+  position: absolute;
+  width: 390px;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.connectingPeopleText {
+  flex: 6;
+  display: grid;
+  gap: 20px;
+  padding-left: 100px;
+  color: #c8d3de;
+  z-index: 2;
+}
+
+.connectingPeopleText>.cptitle {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.connectingPeopleText>.linkWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: fit-content;
+  gap: 20px;
+}
+
+.connectingPeopleText>.linkWrapper>i {
+  padding: 10px;
+  background: #1c4560fc;
+  border-radius: 100vw;
+  transition: all 0.3s ease;
+}
+
+.connectingPeopleText>.linkWrapper:hover i {
+  background: #60b848;
+  color: #fff;
+}
+
+.connectingPeopleText>.linkWrapper>.link>p {
+  margin-bottom: 5px;
+  color: #d2d9e0;
+  font-weight: 500;
+}
+
+.connectingPeopleText>.detailsButton {
+  width: fit-content;
+  background: #1C4560;
+  border: 1px solid #c8d3de;
+  color: #c8d3de;
+}
+.connectingPeopleText>.detailsButton:hover {
+  border: 1px solid #60b848;
+  color: #fff;
+}
+
+.connectingPeopleImg {
+  flex: 6;
+}

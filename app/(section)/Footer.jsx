@@ -4,6 +4,7 @@ import Link from "next/link"
 import footerBg from "../imgs/white-and-green-logo.png"
 
 function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
     <div className="footer">
       <div className="footerContainer">
@@ -43,7 +44,7 @@ function Footer() {
             <form action="">
               <input type="text" placeholder="Enter your email address"/>
               <input type="submit" value="subscribe"/>
-              <p>We will never spam you!</p>
+              <p>We will never spam you...!</p>
             </form>
           </div>
           <div className="contact">
@@ -68,7 +69,7 @@ function Footer() {
           <li> <Link href="#">Terms of Use</Link> </li>
           <li> <Link href="#"> Privacy Policy</Link> </li>
         </ul>
-        <p className="copyright">2024© All right reserved by Purehome Real Estate LLC.</p>
+        <p className="copyright">2011 - {currentYear}© All right reserved by Purehome Real Estate LLC.</p>
       </div>
     </div>
   )
